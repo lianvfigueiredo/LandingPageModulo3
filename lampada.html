@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap');
+        body{
+            padding:0;
+            background-color: rgb(48, 48, 48);
+            display: grid;
+            grid-auto-flow: row;
+            grid-auto-columns: 60%;
+            margin: auto;
+            justify-content: center;
+            
+            text-align: center; 
+            color: white;
+        }
+        h1{
+            font-size: 50px;
+            font-family: 'Raleway';
+        }
+        #caixa{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: azure;
+            border-radius: 30px;
+        }
+        #image{
+            margin: 10px;
+        }
+        #botoes{
+            display: flex;
+            width: 65%;
+            justify-content: space-between;
+            margin: 15px;
+        }
+        #botoes button{
+            background-color:rgb(0, 128, 255);
+            color: white;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 2px rgb(71, 162, 253, 0.4); 
+        }
+        #botoes button:hover{
+            cursor: pointer;
+            background-color: rgb(73, 164, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lâmpada</h1>
+    <div id="caixa">
+        <div>
+            <img id="image" src="assets/images/lampadaOn.svg" onclick="quebrar()">
+        </div>
+        <div id="botoes">
+            <button id="ligar" onclick="ligar()">Ligar</button>
+            <button id="desligar" onclick="desligar()">Desligar</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="assets/js/lampada.js"></script>

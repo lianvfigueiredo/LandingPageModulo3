@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link type="text/css" href="assets/css/tabuada.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <section id="tab">
+        <div class="inp">
+            <label>Qual número você deseja saber a tabuada?</label>
+            <input id="num1" type="number">
+        </div>
+        <div class="inp">
+            <label>Até que número você quer?</label>
+            <input id="num2" type="number">
+        </div>
+        <button type="button" onclick="calcular(num1.value, num2.value)">Calcular</button>
+        <p id="result"><span>Preencha os valores acima!</span></p>
+    </section>
+</body>
+</html>
+
+<script src="assets/js/tabuada.js"></script>

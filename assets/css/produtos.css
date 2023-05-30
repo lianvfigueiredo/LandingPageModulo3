@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+    header{
+        text-align: center;
+        
+        background-color: rgb(48, 48, 48);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        color: white;
+        display: grid;
+    }
+        header h1{
+            margin-bottom: 0;
+        }
+        header img{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+main{
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    main h2{
+        font-size: 40px;
+        margin: 0;
+    }
+    #list{
+        font-size: 26px;
+        margin: 0px auto 20px 0;
+        color: rgb(68, 68, 68);
+    }
+        #form{
+            background-color: aliceblue;
+            border: 1px solid rgb(166, 166, 166);
+            border-radius: 25px;     
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+            #form label{
+                font-size: 25px;
+                margin: 20px auto 5px 20px;
+                color: rgb(68, 68, 68);
+            }
+            #form input{
+                background-color: white;
+                border: 1px solid rgb(166, 166, 166);
+                border-radius: 10px;
+                margin: 0px 20px;
+                font-size: 17px;
+                padding: 10px;
+            }
+            #form div{
+                margin: 20px 0 20px 20px;
+                display: flex;
+                flex-direction: row;
+                grid-gap: 10px;
+            }
+            button{
+                background-color: rgb(19, 19, 19);
+                border: none;
+                border-radius: 10px;
+                padding: 15px;
+                color: white;
+                font-weight: bold;
+                transition: background-color ease 0.3s
+            }
+            button:hover{
+                cursor: pointer;
+                background-color:rgb(79, 79, 79);
+            }
+    #tablemax{
+        margin-top:30px;
+        border-spacing: 0;
+        border-color: rgb(166, 166, 166);
+        border-collapse: collapse;
+    }
+        thead{
+            color: white;
+            background-color: rgb(36, 36, 36);     
+        }
+            .table2, .table2 th, .table2 td{
+                padding: 3px;
+                font-size: 26px;
+                border: 2px solid rgb(166, 166, 166);
+            } 
+            .table2 th{
+                padding: 7px;
+            }
+        .img{
+        height: 37px;
+        }
+        .img:hover{
+            cursor: pointer;
+        }
+        .p_img{
+            margin: 0;
+            padding: 0;
+            padding-top: 3px;
+        }

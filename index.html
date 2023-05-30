@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projetos Lían</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body{
+            background: linear-gradient(to bottom, rgb(177, 42, 42) 20%, rgb(0, 0, 0)120%), rgb(36, 9, 9);
+            background-repeat: no-repeat;
+
+        }
+        nav{
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 400px){
+            body{
+                height: 110vh;
+            }
+            #project{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            row-gap: 20px;
+        }
+        }
+        @media only screen and (max-width: 800px){
+            main{
+                margin-top: 1rem!important;
+            }
+            #project{
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+            #project a{
+                padding: 4px 7px 4px 7px;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media only screen and (max-width: 400px){
+            nav{
+                flex-direction:column;
+            }
+            nav img{
+                position: absolute;
+                left: 5px;
+            }
+            main{
+                margin-top: 1rem!important;
+            }
+
+            #project{
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .margin{
+            margin-top: 3rem;
+        }
+    </style>
+  </head>
+  <body>
+        <nav class="navbar bg-secondary px-3 d-flex justify-content-between">
+            <img src="assets/images/OIG.jpeg" alt="Logo" width="60" class="align-text-top">
+            <p class="fs-2 m-0 ps-2 text-white">Site de Projetos</p>     
+            <div>
+                <a class="fs-2 text-white text-decoration-none" href="">Index</a>
+            </div>
+        </nav>
+        <main class="text-white margin">
+            <p id="tit" class="fs-1 text-center">Projetos</p>
+            <div id="project" class="container fs-2 margin justify-content-between text-center" style="width: 95%">
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="landingPage.html">Landing Page</a>
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="projetoHBOMax3.html">Bootcamp DNC</a>
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="projetoHBOMax3.html">HBO Max</a>
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="lampada.html">Lâmpada</a>
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="tabuada.html">Tabuada</a>
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="produtos.html">Produtos</a>
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="procuradorPaises.html">Procurador de Países</a>
+                <a class="mx-3 text-decoration-none text-white bg-dark p-2" href="ccxp.html">CCXP</a>
+            </div>
+        </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

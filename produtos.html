@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/produtos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/OIG.jpeg">
+        <h1>Controle de Produtos</h1>
+    </header>
+    
+    <main>
+        <h2>Produtos</h2>
+        <p id="list">Lista de Produtos</p>
+        <div id="form">
+            <label>Produto</label>
+            <input id="nome_produto" placeholder="Nome do Produto" type="text" required>
+
+            <label>Valor</label>
+            <input id="valor_produto" placeholder="R$ 00.00" type="text" required>
+
+            <div>
+                <button id="adicionar" type="button">Adicionar</button>
+                <button id="cancelar" type="button">Cancelar</button>
+            </div>
+        </div>
+  
+        <table id="tablemax">
+            <thead>
+                <tr class="table2">
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </main>
+</body>
+</html>
+
+<script src="assets/js/produtos.js"></script>
