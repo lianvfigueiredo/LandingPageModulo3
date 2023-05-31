@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        nav{
+            background-color: #FFD900;
+        }
+        main{
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 40% 60%;
+        }
+        #present{
+            background-color: #514988;
+            height: 39vw;
+        }
+        #text1{
+            font-size: 1.7vw;
+        }
+        #text2{
+            font-size: 2vw;
+        }
+        #yellow{
+            color: #F3C61F;
+            font-size: 4vw;
+        }
+        #secgrid{
+            grid-auto-flow: row;
+        }
+        #countdown{
+            display: grid;
+            margin-right: 30px;
+            grid-auto-flow: column;
+            grid-auto-rows: 70px;
+            grid-template-columns: 25% 25% 25% 25%;
+            font-size: 4rem;
+            color: #514988;
+            align-self:end ;
+        }
+        #slog{
+            color: #E33881;
+            margin-left: 25px;
+        }
+        .s{
+            align-self:baseline;
+            text-align: center;
+        }
+        footer{
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 55% 45%;
+        }
+        #yellow2{
+            color: #F3C61F;
+            font-size: 2vw;
+        }
+        .btn-g{
+            font-size: 2em;
+            background-color: #514988;
+            padding: 30px 60px;
+            border-radius: 20px;
+        }
+        .video{
+            width: 55vw;
+        }
+        .img{
+            max-width: 190px;
+            width: 14vw;
+        }
+        @media only screen and (max-width: 1425px){
+            .img{
+                width: 12vw;
+            }
+            #yellow2{
+
+            }
+        }
+        @media only screen and (max-width: 1150px){
+            #present{
+                height: 41vw;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+          <a class="mt-2 mx-5 pb-3 navbar-brand container" href="#">
+            <img src="assets/images/ccxp/logo CCXP.svg" width="200">
+          </a>
+    </nav>
+    
+    <main>
+        <div id="present" class="text-center">
+            <span id="yellow" class="fw-bold text-uppercase">reviva o épico</span>
+            <p id="text2" class="text-white fw-bold text-uppercase">de 01 a 04 de dezembro</p>
+            <p id="text1" class="text-white mx-5 mb-5 mt-4">Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus universos favoritos, explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos nossos corredores.</p>
+        </div>
+
+        <div id="secgrid">
+            <div class="mt-1 text-center">
+                <div id="countdown" class="fw-bold">
+                    <p class="mb-0 s" id="dias"></p>
+                    <p class="mb-0 s" id="horas"></p>
+                    <p class="mb-0 s" id="minutos"></p>
+                    <p class="mb-0 s" id="segundos"></p>
+                </div>
+                <script src="assets/js/ccxp.js"></script>
+                <p id="slog" class="fs-3 my-1 fw-bold ">PARA A MAIOR CCXP DE TODOS OS TEMPOS</p>
+            </div>
+            <div id="slog" class="text-center mx-2 video">
+                <video controls loop class="video"><source src="assets/videos/Arlequina.mp4"></video>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mb-5">
+        <div>
+            <p id="yellow2" class=" fw-bold text-center">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
+            <div class="text-center">
+                <img class="img" src="assets/images/ccxp/quinta.svg">
+                <img class="img" src="assets/images/ccxp/sexta.svg">
+                <img class="img" src="assets/images/ccxp/sabado.svg">
+                <img class="img" src="assets/images/ccxp/doming.svg">
+            </div>
+        </div>
+        <div class="text-center align-self-center">
+            <button class="btn btn-g btn-lg text-uppercase fw-bold text-white">Garanta Já o seu</button>
+        </div>
+    </footer>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
