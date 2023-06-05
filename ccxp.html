@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CCXP22</title>
+    <title>CCXP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
+        html{
+            font-size: 0.9vw;
+        }
         nav{
             background-color: #FFD900;
         }
@@ -16,17 +19,17 @@
         }
         #present{
             background-color: #514988;
-            height: 39vw;
+            height: 42rem;
         }
         #text1{
-            font-size: 1.7vw;
+            font-size: 2rem;
         }
         #text2{
-            font-size: 2vw;
+            font-size: 2.2rem;
         }
         #yellow{
             color: #F3C61F;
-            font-size: 4vw;
+            font-size: 4.5rem;
         }
         #secgrid{
             grid-auto-flow: row;
@@ -35,7 +38,7 @@
             display: grid;
             margin-right: 30px;
             grid-auto-flow: column;
-            grid-auto-rows: 70px;
+            grid-auto-rows: 6rem;
             grid-template-columns: 25% 25% 25% 25%;
             font-size: 4rem;
             color: #514988;
@@ -59,30 +62,28 @@
             font-size: 2vw;
         }
         .btn-g{
-            font-size: 2em;
+            font-size: 2rem;
             background-color: #514988;
-            padding: 30px 60px;
-            border-radius: 20px;
+            padding: 2.2rem 4.3rem;
+            border-radius: 1.2rem;
         }
         .video{
-            width: 55vw;
+            width: 60rem;
         }
         .img{
-            max-width: 190px;
-            width: 14vw;
+            width: 14rem;
+            transition: ease-in-out transform 0.75s;
         }
-        @media only screen and (max-width: 1425px){
-            .img{
-                width: 12vw;
-            }
-            #yellow2{
-
-            }
+        .img:hover{
+            cursor: pointer;
         }
-        @media only screen and (max-width: 1150px){
-            #present{
-                height: 41vw;
-            }
+        .img2{
+            width: 20rem;
+        }
+        .card-ingresso-selecionado{
+            width: 14rem;
+            transform: scale(1.1);
+            transition: ease-in-out transform 0.75s;
         }
     </style>
   </head>
@@ -90,7 +91,7 @@
     
     <nav class="navbar">
           <a class="mt-2 mx-5 pb-3 navbar-brand container" href="#">
-            <img src="assets/images/ccxp/logo CCXP.svg" width="200">
+            <img class="img2" src="assets/images/logo CCXP.svg"">
           </a>
     </nav>
     
@@ -109,11 +110,11 @@
                     <p class="mb-0 s" id="minutos"></p>
                     <p class="mb-0 s" id="segundos"></p>
                 </div>
-                <script src="assets/js/ccxp.js"></script>
+                
                 <p id="slog" class="fs-3 my-1 fw-bold ">PARA A MAIOR CCXP DE TODOS OS TEMPOS</p>
             </div>
             <div id="slog" class="text-center mx-2 video">
-                <video controls loop class="video"><source src="assets/videos/Arlequina.mp4"></video>
+                <video id="myVideo" controls loop class="video" autoplay="true"><source src="assets/videos/Arlequina.mp4"></video>
             </div>
         </div>
     </main>
@@ -122,10 +123,10 @@
         <div>
             <p id="yellow2" class=" fw-bold text-center">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
             <div class="text-center">
-                <img class="img" src="assets/images/ccxp/quinta.svg">
-                <img class="img" src="assets/images/ccxp/sexta.svg">
-                <img class="img" src="assets/images/ccxp/sabado.svg">
-                <img class="img" src="assets/images/ccxp/doming.svg">
+                <img id="quinta" class="img" src="assets/images/quinta.svg">
+                <img id="sexta" class="img" src="assets/images/sexta.svg">
+                <img id="sabado" class="img" src="assets/images/sabado.svg">
+                <img id="domingo" class="img" src="assets/images/doming.svg">
             </div>
         </div>
         <div class="text-center align-self-center">
@@ -135,3 +136,4 @@
   </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="assets/js/ccxp.js"></script>

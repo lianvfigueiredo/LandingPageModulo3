@@ -1,7 +1,28 @@
 const dataCCXP = new Date("20 jul 2023")
+
+    let quinta = document.getElementById('quinta')
+    quinta.addEventListener('mouseleave', destaqueOff)
+    quinta.addEventListener('mouseenter', destaque)
+    let sexta = document.getElementById('sexta')
+    sexta.addEventListener('mouseleave', destaqueOff)
+    sexta.addEventListener('mouseenter', destaque)
+    let sabado = document.getElementById('sabado')
+    sabado.addEventListener('mouseleave', destaqueOff)
+    sabado.addEventListener('mouseenter', destaque)
+    let domingo = document.getElementById('domingo')
+    domingo.addEventListener('mouseleave', destaqueOff)
+    domingo.addEventListener('mouseenter', destaque)
     
     
-    
+    function destaque(){
+        this.classList.add("card-ingresso-selecionado")
+    }
+    function destaqueOff(){
+
+        this.style.transform = "scale(1)"
+        this.classList.remove("card-ingresso-selecionado")
+        this.style.transform = ""
+    }
     function countdown(){
         const dataAtual = new Date()
         let diferenca = dataCCXP - dataAtual
@@ -28,3 +49,4 @@ const dataCCXP = new Date("20 jul 2023")
         return tempo
         
     }
+    
