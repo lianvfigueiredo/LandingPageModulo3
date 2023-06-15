@@ -1,0 +1,90 @@
+:root{
+    --bs-btn-hover-bg: #6259a1;
+}
+html{
+    font-size: 0.9vw;
+}
+nav{
+    background-color: #FFD900;
+}
+main{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40% 60%;
+}
+#present{
+    background-color: #514988;
+    height: 42rem;
+}
+#text1{
+    font-size: 2rem;
+}
+#text2{
+    font-size: 2.2rem;
+}
+#yellow{
+    color: #F3C61F;
+    font-size: 4.5rem;
+}
+#secgrid{
+    grid-auto-flow: row;
+}
+#countdown{
+    display: grid;
+    margin-right: 30px;
+    grid-auto-flow: column;
+    grid-auto-rows: 6rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-size: 4rem;
+    color: #514988;
+    align-self:end ;
+}
+#slog{
+    color: #E33881;
+    margin-left: 25px;
+}
+.s{
+    align-self:baseline;
+    text-align: center;
+}
+footer{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 55% 45%;
+}
+.yellow2{
+    color: #F3C61F;
+    font-size: 2vw;
+}
+.btn-g{
+    font-size: 2rem;
+    background-color: #514988;
+    padding: 2.2rem 4.3rem;
+    border-radius: 1.2rem;
+}
+.video{
+    width: 60rem;
+}
+.ingresso{
+    width: 14rem;
+    transition: ease-in-out transform 0.6s;
+
+}
+.ingressoimg{
+    width: 14rem;
+    transition: ease-in-out transform 0.6s;
+
+}
+.ingresso:hover{
+    cursor: pointer;
+}
+.img2{
+    width: 20rem;
+}
+.card-ingresso-selecionado{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 4px 3px green inset
+}
+/* .teste{
+    display: flex;
+} */

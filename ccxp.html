@@ -5,85 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CCXP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/ccxp.css" type="text/css">
     <style>
-        html{
-            font-size: 0.9vw;
+        .check{
+            width: 1.4rem;
+            border-radius: 3px;
+            position: absolute;
+            margin: 8px 8px;
         }
-        nav{
-            background-color: #FFD900;
+        .display{
+            display: none;
         }
-        main{
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-columns: 40% 60%;
+
+        input{
+            width: 25rem;
+            background-color: aqua;
+            border: 1px solid rgb(193, 192, 192);
+            border-radius: 7px;
+            line-height: 1.7rem;
+            margin: 7px;
+            padding: 4px;
         }
-        #present{
-            background-color: #514988;
-            height: 42rem;
+        form button{
+            border: 1px solid rgb(200, 200, 200);     
+            background-color: #514988;    
+
         }
-        #text1{
-            font-size: 2rem;
-        }
-        #text2{
-            font-size: 2.2rem;
-        }
-        #yellow{
-            color: #F3C61F;
-            font-size: 4.5rem;
-        }
-        #secgrid{
-            grid-auto-flow: row;
-        }
-        #countdown{
-            display: grid;
-            margin-right: 30px;
-            grid-auto-flow: column;
-            grid-auto-rows: 6rem;
-            grid-template-columns: 25% 25% 25% 25%;
-            font-size: 4rem;
-            color: #514988;
-            align-self:end ;
-        }
-        #slog{
-            color: #E33881;
-            margin-left: 25px;
-        }
-        .s{
-            align-self:baseline;
-            text-align: center;
-        }
-        footer{
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-columns: 55% 45%;
-        }
-        #yellow2{
-            color: #F3C61F;
-            font-size: 2vw;
-        }
-        .btn-g{
-            font-size: 2rem;
-            background-color: #514988;
-            padding: 2.2rem 4.3rem;
-            border-radius: 1.2rem;
-        }
-        .video{
-            width: 60rem;
-        }
-        .img{
-            width: 14rem;
-            transition: ease-in-out transform 0.75s;
-        }
-        .img:hover{
+        form button:hover{
             cursor: pointer;
-        }
-        .img2{
-            width: 20rem;
-        }
-        .card-ingresso-selecionado{
-            width: 14rem;
-            transform: scale(1.1);
-            transition: ease-in-out transform 0.75s;
+            background-color: #6c61b5;
         }
     </style>
   </head>
@@ -121,18 +71,42 @@
 
     <footer class="mb-5">
         <div>
-            <p id="yellow2" class=" fw-bold text-center">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
-            <div class="text-center">
-                <img id="quinta" class="img" src="assets/images/ccxp/quinta.svg">
-                <img id="sexta" class="img" src="assets/images/ccxp/sexta.svg">
-                <img id="sabado" class="img" src="assets/images/ccxp/sabado.svg">
-                <img id="domingo" class="img" src="assets/images/ccxp/doming.svg">
+            <p class="yellow2 fw-bold text-center" class=" ">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
+            <div class="ms-4 d-flex">
+                <div class="ingresso">
+                    <img class="check display" src="assets/images/ccxp/blue-check.png">
+                    <img id="Quinta-Feira" class="ingressoimg" src="assets/images/ccxp/quinta.svg">
+                </div>
+                <div class="ingresso">
+                    <img class="check display" src="assets/images/ccxp/blue-check.png">
+                    <img id="Sexta-Feira" class="ingressoimg" src="assets/images/ccxp/sexta.svg">
+                </div>
+                <div class="ingresso">
+                    <img class="check display" src="assets/images/ccxp/blue-check.png">
+                    <img id="Sábado" class="ingressoimg" src="assets/images/ccxp/sabado.svg">
+                </div>
+                <div class="ingresso">
+                    <img class="check display" src="assets/images/ccxp/blue-check.png">
+                    <img id="Domingo" class="ingressoimg" src="assets/images/ccxp/doming.svg">
+                </div>
+                
             </div>
         </div>
         <div class="text-center align-self-center">
-            <button class="btn btn-g btn-lg text-uppercase fw-bold text-white">Garanta Já o seu</button>
+            <button id="comprar" class="btn btn-g btn-lg text-uppercase fw-bold text-white">Garanta Já o seu</button>
+            <p id="texto" class="yellow2 fw-bold text-center display">Você comprou os ingressos dos dias:<br> <span id="diasComprados"></span></p>
         </div>
     </footer>
+
+    <form>
+        <div class="text-center">
+            <p class="fs-1 fw-semibold">
+                Digite seu e-mail para receber novidades:
+            </p>
+            <input class="fs-3 ps-3" type="email" required placeholder="E-mail">
+            <button class="fs-3 text-white" type="submit">Enviar</button>
+        </div>
+    </form>
   </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
