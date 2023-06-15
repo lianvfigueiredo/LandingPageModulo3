@@ -13,6 +13,7 @@ const dataCCXP = new Date("20 jul 2023")
     )
     
     function destaque(){
+        clearInterval(intervalDestaque)
         this.classList.contains("card-ingresso-selecionado") ? null : this.classList.toggle("card-ingresso-selecionado")
     }  
     function destaqueOff(){
@@ -26,20 +27,20 @@ const dataCCXP = new Date("20 jul 2023")
         })
     }
 
-    setInterval(destacando, 3000)
+    let k = 0
+    let intervalDestaque = setInterval(destacando, 3000)
     
     function destacando(){     
-        // k == ingressos.length ? k = 0 : null
-        for(let k = 0; k< ingressos.length; k++ ){
+        k == ingressos.length ? k = 0 : null
+        ingressos[k].classList.toggle("card-ingresso-selecionado")
+        setTimeout( () => {
             ingressos[k].classList.toggle("card-ingresso-selecionado")
-            setTimeout( () => {
-                ingressos[k].classList.toggle("card-ingresso-selecionado")
-                // k++
-            }, 2000)
-        }
+            k++
+        }, 2000)
+        
 
     }
-    
+
     function selectedKey(event){
         if(event.key == 'Enter'){
             ingressos.forEach( (ingresso) => {
